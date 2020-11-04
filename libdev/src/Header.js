@@ -1,10 +1,108 @@
 import React from 'react';
 import './Header(Main).css';
+import './Header(Sticky).css';
 
 function Header() {
     return (
         <div>
             <a className="skip-link screen-reader-text">Skip to content</a>
+            <div className="sticky-header">
+                <div className="container">
+                    <div className="sticky-header-bar thnk-col-3">
+                        <div className="sticky-header-col1">
+                            <span className="logo-content">
+                                <div className="thunk-logo">
+                                    <a 
+                                        className="custom-logo-link"
+                                        href="/"
+                                        rel="home"
+                                    >
+                                        <img
+                                            width="700"
+                                            height="200"
+                                            src="//img1a.flixcart.com/www/linchpin/fk-cp-zion/img/fk-plus_043837.png"
+                                            className="custom-logo"
+                                            alt="Library"
+                                        />
+                                    </a>
+                                </div>
+                            </span>
+                        </div>
+                        <div className="sticky-header-col2">
+                            <nav>
+                                <div className="menu-toggle" style={{display: "none"}}>
+                                    <button type="button" className="menu-btn" id="menu-btn-stk">
+                                        <div className="btn">
+                                            <span className="icon-bar"></span>
+                                            <span className="icon-bar"></span>
+                                            <span className="icon-bar"></span>
+                                        </div>
+                                    </button>
+                                </div>
+                                <div className="sider main top-store-menu-hide left">
+                                    <div className="sider-inner">
+                                        <ul id="top-store-stick-menu" className="top-store-menu" data-style-menu="horizontal">
+                                            <li>
+                                                <a href="/" aria-current="page">
+                                                    <span className="top-store-menu-link">Home</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/">
+                                                    <span className="top-store-menu-link">My orders</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/">
+                                                    <span className="top-store-menu-link">All books</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/">
+                                                    <span className="top-store-menu-link">Contact us</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                        <div className="sticky-header-col3">
+                            <div className="thunk-icon">
+                                <div className="header-icon">
+                                    <a className="prd-search" href="#">
+                                        <i className="fa fa-search"></i>
+                                    </a>
+                                    <a className="wishlist" href="">
+                                        <i className="fa fa-heart-o"></i>
+                                    </a>
+                                    <span>
+                                        <a href="">
+                                            <span className="account-text">Login / Signup</span>
+                                            <span className="account-text">My account</span>
+                                            <i className="fa fa-lock" aria-hidden="true"></i>
+                                        </a>
+                                    </span>
+                                    <div className="cart-icon">
+                                        <a className="cart-contents" href="" title="See your orders">
+                                            <i className="fa fa-shopping-basket"></i>
+                                            <span className="cart-content">
+                                                <span className="count-item">1</span>
+                                                <span className="woocommerce-Price-amount amount">
+                                                    <bdi>
+                                                        <span className="woocommerce-Price-currencySymbol">₹</span>
+                                                        675.00
+                                                    </bdi>
+                                                </span>
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
             <div className="main-header mhdrfour none left cnv-none">
                 <div className="container">
                     <div className="main-header-bar thnk-col-3">

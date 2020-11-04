@@ -5,10 +5,18 @@ import Content from './Content';
 import Footer from './Footer';
 import Header from './Header';
 
+
+
 function App() {
+  const ScrollTop = () => {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+  }
   return (
     <Router>
       <div className="app">
+        <a id="move-to-top" onClick={ScrollTop} className="move-to-top-hide">
+          <i className="fa fa-angle-up"></i>
+        </a>
         <Header/>
         <Content/>
         <Footer/>

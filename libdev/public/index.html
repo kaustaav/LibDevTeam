@@ -42,5 +42,19 @@ crossorigin="anonymous">
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <script>
+      window.onscroll = function() {MoveToTopFunction()};
+      function MoveToTopFunction() {
+        if (document.body.scrollTop > 70 || document.documentElement.scrollTop > 70) {
+          document.getElementById("move-to-top").className = "";
+          document.querySelector(".sticky-header").classList.add("stick");
+          // document.getElementById("top-store-mobile-bar").className = "active";
+        } else {
+          document.getElementById("move-to-top").className = "move-to-top-hide";
+          document.querySelector(".sticky-header").classList.remove("stick");
+          // document.getElementById("top-store-mobile-bar").className = "hiding";
+        }
+      }
+    </script>
   </body>
 </html>
