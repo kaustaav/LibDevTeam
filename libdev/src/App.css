@@ -3,7 +3,7 @@
 }
 
 body {
-  color: #666;
+  color: #000;
   background-color: #eaeff2;
   font-style: #f7f7f7;
   font-size: 13px;
@@ -70,7 +70,7 @@ select {
   width: 100%;
   max-width: 250px;
   padding: 5px;
-  color: #666;
+  color: #000;
   border: 1px solid #ccc;
   font-size: 15px;
   line-height: 1.5em;

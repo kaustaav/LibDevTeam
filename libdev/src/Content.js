@@ -5,7 +5,7 @@ import Home from './Home';
 
 function Content() {
     return (
-        <div className="content">
+        <div id="content" className="front" style={{trnasform: "none"}}>
             <Switch>
                 <Route exact path="/">
                     <Home/>

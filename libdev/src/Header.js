@@ -1,6 +1,7 @@
 import React from 'react';
 import './Header(Main).css';
 import './Header(Sticky).css';
+import './Header(Below).css';
 
 function Header() {
     return (
@@ -43,11 +44,6 @@ function Header() {
                                     <div className="sider-inner">
                                         <ul id="top-store-stick-menu" className="top-store-menu" data-style-menu="horizontal">
                                             <li>
-                                                <a href="/" aria-current="page">
-                                                    <span className="top-store-menu-link">Home</span>
-                                                </a>
-                                            </li>
-                                            <li>
                                                 <a href="/">
                                                     <span className="top-store-menu-link">My orders</span>
                                                 </a>
@@ -55,6 +51,11 @@ function Header() {
                                             <li>
                                                 <a href="/">
                                                     <span className="top-store-menu-link">All books</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/">
+                                                    <span className="top-store-menu-link">Preferences</span>
                                                 </a>
                                             </li>
                                             <li>
@@ -174,13 +175,85 @@ function Header() {
                                             <span className="woocommerce-Price-amount amount">
                                                 <bdi>
                                                 <span className="woocommerce-Price-currencySymbol">₹</span>
-                                                675.00
+                                                0.00
                                                 </bdi>
                                             </span>
                                         </span>
                                     </a>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="below-header mhdrfour left none">
+                <div className="container">
+                    <div className="below-header-bar thnk-col-3">
+                        <div className="below-header-col1">
+                            <div className="menu-category-list">
+                                <div className="toggle-cat-wrap">
+                                    <p className="cat-toggle" tabIndex="0">
+                                        <span className="cat-icon">
+                                            <span className="cat-top"></span>
+                                            <span className="cat-top"></span>
+                                            <span className="cat-bot"></span>
+                                        </span>
+                                        <span className="toggle-title">Category</span>
+                                        <span className="toggle-icon"></span>
+                                    </p>
+                                </div>
+                                <ul className="product-cat-list thunk-product-cat-list" style={{display: "none"}}>
+                                    <li className="cat-item cat-item-63">
+                                        <a href="">Fiction</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <nav>
+                                <div className="menu-toggle" style={{display: "none"}}>
+                                    <button type="button" className="menu-btn" id="menu-btn">
+                                        <div className="btn">
+                                            <span className="icon-bar"></span>
+                                            <span className="icon-bar"></span>
+                                            <span className="icon-bar"></span>
+                                        </div>
+                                        <span className="icon-text">Menu</span>
+                                    </button>
+                                </div>
+                                <div className="sider main top-store-menu-hide left">
+                                    <div className="menu-close">
+                                        <span tabIndex="0" className="menu-close-btn"></span>
+                                    </div>
+                                    <div className="sider-inner">
+                                        <ul id="top-store-menu" className="top-store-menu">
+                                            <li>
+                                                <a href="/" aria-current="page">
+                                                    <span className="top-store-menu-link">Home</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <span className="top-store-menu-link">My orders</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <span className="top-store-menu-link">All Products</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <span className="top-store-menu-link">Preferences</span>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="">
+                                                    <span className="top-store-menu-link">Contact Us</span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </nav>
                         </div>
                     </div>
                 </div>
