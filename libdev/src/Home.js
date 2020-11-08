@@ -4,7 +4,6 @@ import './Home.css';
 import PreferredTopics from './PreferredTopics';
 import RecentlyAdded from './RecentlyAdded';
 import Sidebar from './Sidebar';
-import TopRated from './TopRated';
 import TrendingNow from './TrendingNow';
 
 function Home() {
@@ -18,7 +17,7 @@ function Home() {
                             <section className="thunk-slider-section">
                                 <AdsSection/>
                             </section>
-                            <section>
+                            <section className="thunk-prferred-topics-section">
                                 <PreferredTopics/>
                             </section>
                             <section>
@@ -27,9 +26,6 @@ function Home() {
                             <section>
                                 <TrendingNow/>
                             </section> 
-                            <section>
-                                <TopRated/>
-                            </section>
                         </div>
                     </div>
                 </div>

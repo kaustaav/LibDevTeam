@@ -6,6 +6,11 @@
 
 .ads-section a {
     display: block;
+    background-color: white !important;
+}
+
+.ads-section a:hover {
+    opacity: 0.8;
 }
 
 .carousel .slide img {
@@ -16,6 +21,10 @@
     cursor: pointer !important;
 }
 
+.carousel .slide img:hover {
+    opacity: 0.3 !important;
+}
+
 .Carousel>a {
     height: auto;
     height: max-content !important;
@@ -23,4 +32,8 @@
 
 .Carousel>a>img {
     cursor: pointer;
+}
+
+.Carousel>a>img:hover {
+    opacity: 0.3 !important;
 }

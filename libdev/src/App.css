@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+:focus {
+  outline: none;
+}
+
 body {
   color: #000;
   background-color: #eaeff2;
@@ -11,7 +15,7 @@ body {
   letter-spacing: .7px;
   margin: 0;
   padding: 0;
-  font-family: "Lato-Regular",sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-weight: inherit;
 }
 
@@ -29,7 +33,7 @@ a:active, a:hover, a:visited {
 
 a:hover {
   color: #dd1c1c !important;
-  opacity: .9;
+  /* opacity: .9; */
 }
 
 .screen-reader-text {
